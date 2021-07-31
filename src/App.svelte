@@ -36,24 +36,21 @@
 </main>
 
 <style>
-	main {
-		text-align: center;
-		padding: 1em;
-		max-width: 240px;
-		margin: 0 auto;
-	}
-
+	
 	h1 {
-		color: #ff3e00;
-		text-transform: uppercase;
-		font-size: 4em;
-		font-weight: 100;
+		color: purple;
+		font-family: 'kalam';
 	}
 
-	@media (min-width: 640px) {
-		main {
-			max-width: none;
-		}
+	.container {
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(305px, 1fr));
+		grid-gap: 15px;
 	}
+
+	.container > .card img {
+		max-width: 100%;
+	}
+
 </style>
 
